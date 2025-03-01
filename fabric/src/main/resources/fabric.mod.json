@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "o123456789",
+  "version": "${version}",
+  "name": "O123456789",
+  "description": "",
+  "authors": [
+    "catboybinary"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/o123456789/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "meow.binary.o123456789.fabric.O123456789Fabric"
+    ],
+    "client": [
+      "meow.binary.o123456789.fabric.client.O123456789FabricClient"
+    ]
+  },
+  "mixins": [
+    "o123456789.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

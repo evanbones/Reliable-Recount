@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "GNU GPLv3"
+
+[[mods]]
+modId = "o123456789"
+version = "${version}"
+displayName = "O123456789"
+authors = "catboybinary"
+description = '''
+
+'''
+logoFile = "title.png"
+
+[[dependencies.o123456789]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.o123456789]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "o123456789.mixins.json"
