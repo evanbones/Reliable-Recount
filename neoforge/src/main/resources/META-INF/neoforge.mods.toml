@@ -16,17 +16,19 @@ logoFile = "title.png"
 [[dependencies.o123456789]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21,)"
+versionRange = "[21.1.113,)"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.o123456789]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21, 1.21.2)"
+versionRange = "[1.21.1]"
 ordering = "NONE"
 side = "CLIENT"
 
 
 [[mixins]]
 config = "o123456789.mixins.json"
+[[mixins]]
+config = "o123456789_neoforge.mixins.json"

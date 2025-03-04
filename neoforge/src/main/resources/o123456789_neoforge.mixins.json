@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "meow.binary.o123456789.mixin",
+  "package": "meow.binary.o123456789.neoforge.mixin",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "client": [
-    "FontMixin",
-    "GuiGraphicsMixin"
+    "MEStorageScreenMixin",
+    "StorageScreenBaseMixin"
   ],
   "mixins": [
   ],
