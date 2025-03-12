@@ -47,6 +47,9 @@ dependencies {
     implementation "curse.maven:guideme-1173950:6223759"
     implementation "curse.maven:sophisticated-core-618298:6241158"
     implementation "curse.maven:sophisticated-backpacks-422301:6246606"
+    implementation "curse.maven:curios-309927:6296219"
+    implementation "curse.maven:geckolib-388172:6295052"
+    implementation "curse.maven:ars-nouveau-401955:6286951"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
