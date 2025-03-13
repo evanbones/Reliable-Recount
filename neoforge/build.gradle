@@ -43,6 +43,7 @@ repositories {
 
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
+    implementation "curse.maven:emi-580555:6205506"
     implementation "curse.maven:applied-energistics-2-223794:6225422"
     implementation "curse.maven:guideme-1173950:6223759"
     implementation "curse.maven:sophisticated-core-618298:6241158"

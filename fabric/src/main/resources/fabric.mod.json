@@ -22,7 +22,8 @@
     ]
   },
   "mixins": [
-    "o123456789.mixins.json"
+    "o123456789.mixins.json",
+    "o123456789_fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.10",

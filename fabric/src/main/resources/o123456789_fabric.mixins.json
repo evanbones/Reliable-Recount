@@ -1,12 +1,9 @@
 {
   "required": true,
-  "package": "meow.binary.o123456789.neoforge.mixin",
+  "package": "meow.binary.o123456789.fabric.mixin",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "client": [
-    "AbstractStorageTerminalScreenMixin",
-    "MEStorageScreenMixin",
-    "StorageScreenBaseMixin",
     "EmiRenderHelperMixin"
   ],
   "injectors": {
