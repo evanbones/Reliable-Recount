@@ -51,6 +51,7 @@ dependencies {
     implementation "curse.maven:curios-309927:6296219"
     implementation "curse.maven:geckolib-388172:6295052"
     implementation "curse.maven:ars-nouveau-401955:6286951"
+    implementation "curse.maven:dark-mode-everywhere-574123:6470153"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')

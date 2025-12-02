@@ -1,6 +1,5 @@
 package meow.binary.o123456789.neoforge.mixin;
 
-import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.vertex.PoseStack;
 import meow.binary.o123456789.O123456789;
 import net.minecraft.client.Minecraft;
@@ -28,11 +27,12 @@ public class StorageScreenBaseMixin {
             poseStack.scale(scale, scale, 1.0F);
         }
 
-        guiGraphics.drawString(font, component,
+        O123456789.drawStringWrapper(guiGraphics, font, component,
                 (int) ((x + 16)/scale - font.width(component)),
                 (int) ((y + 16)/scale - 7),
                 16777215
         );
+
         poseStack.popPose();
         ci.cancel();
     }
