@@ -17,8 +17,8 @@ public abstract class FontMixin {
     @Shadow
     public abstract void drawInBatch8xOutline(FormattedCharSequence text, float x, float y, int color, int backgroundColor, Matrix4f matrix, MultiBufferSource bufferSource, int packedLightCoords);
 
-
-    @Shadow public abstract int width(FormattedCharSequence text);
+    @Shadow
+    public abstract int width(FormattedCharSequence text);
 
     @Inject(method = "drawInternal(Lnet/minecraft/util/FormattedCharSequence;FFIZLorg/joml/Matrix4f;Lnet/minecraft/client/renderer/MultiBufferSource;" +
             "Lnet/minecraft/client/gui/Font$DisplayMode;II)I",
@@ -36,22 +36,22 @@ public abstract class FontMixin {
 
         if (dropShadow) {
             int alpha = (color >> 24) & 0xFF;
-            int red   = (color >> 16) & 0xFF;
-            int green = (color >> 8)  & 0xFF;
-            int blue  = color         & 0xFF;
+            int red = (color >> 16) & 0xFF;
+            int green = (color >> 8) & 0xFF;
+            int blue = color & 0xFF;
 
             float darkenFactor = 0.22f;
 
-            red   = (int) (red   * darkenFactor) & 0xFF;
+            red = (int) (red * darkenFactor) & 0xFF;
             green = (int) (green * darkenFactor) & 0xFF;
-            blue  = (int) (blue  * darkenFactor) & 0xFF;
+            blue = (int) (blue * darkenFactor) & 0xFF;
 
             int shadowColor = (alpha << 24) | (red << 16) | (green << 8) | blue;
 
             Matrix4f matrix4f = new Matrix4f(matrix);
-            matrix4f.translate(0,5,0.1f);
+            matrix4f.translate(0, 5, 0.1f);
             drawInBatch8xOutline(text, x, y, color, shadowColor, matrix4f, buffer, packedLightCoords);
-            cir.setReturnValue(width(text)+1);
+            cir.setReturnValue(width(text) + 1);
         }
     }
 }

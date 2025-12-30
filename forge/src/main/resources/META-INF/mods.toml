@@ -6,7 +6,7 @@ license="GNU GPLv3"
 modId="o123456789"
 version="${version}"
 displayName="O123456789"
-authors="catboybinary"
+authors="catboybinary, evanbones"
 description='''
 This mod changes the item count numbers to those from Create mod
 '''
