@@ -6,9 +6,8 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
 rootProject.name = 'o123456789'
 
 include 'common'
 include 'fabric'
-include 'neoforge'
+include 'forge'

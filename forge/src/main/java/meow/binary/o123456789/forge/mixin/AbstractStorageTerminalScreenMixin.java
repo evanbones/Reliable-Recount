@@ -1,4 +1,4 @@
-package meow.binary.o123456789.neoforge.mixin;
+package meow.binary.o123456789.forge.mixin;
 
 import com.hollingsworth.arsnouveau.client.container.AbstractStorageTerminalScreen;
 import com.hollingsworth.arsnouveau.client.container.NumberFormatUtil;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(AbstractStorageTerminalScreen.class)
 public class AbstractStorageTerminalScreenMixin {
-    @Inject(method = "drawStackSize", at = @At("HEAD"), require = 0, cancellable = true)
+    @Inject(method = "drawStackSize", at = @At("HEAD"), require = 0, cancellable = true, remap = false)
     private void injected(GuiGraphics graphics, Font fr, long size, int x, int y, CallbackInfo ci) {
         String stackSize = NumberFormatUtil.formatNumber(size);
         O123456789.renderSizeLabel(graphics, fr, x, y, Component.literal(stackSize).withStyle(Style.EMPTY.withFont(O123456789.FONT)));

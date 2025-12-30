@@ -21,6 +21,6 @@ public abstract class GuiGraphicsMixin {
                            @Local(ordinal = 1, argsOnly = true) int itemY
     ) {
         Component component = Component.literal(text).withStyle(Style.EMPTY.withFont(O123456789.FONT));
-        return O123456789.drawStringWrapper(instance, font, component, itemX + 16 - font.width(component), y, color);
+        return instance.drawString(font, component, itemX + 16 - font.width(component), y, color);
     }
 }
