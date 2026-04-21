@@ -2,15 +2,14 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.evandev.o123456789.mixin",
-  "compatibilityLevel": "JAVA_18",
+  "compatibilityLevel": "JAVA_25",
   "mixins": [
   ],
   "client": [
-    "GuiGraphicsExtractorMixin"
   ],
-  "server": [],
+  "server": [
+  ],
   "injectors": {
     "defaultRequire": 1
   }
 }
-
