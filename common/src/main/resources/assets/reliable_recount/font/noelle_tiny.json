@@ -1,0 +1,19 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+        " ": 3
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "reliable_recount:font/noelle_tiny.png",
+      "ascent": 5,
+      "height": 5,
+      "chars": [
+        "0123456789"
+      ]
+    }
+  ]
+}

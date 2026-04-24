@@ -1,34 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "o123456789",
+  "id": "${mod_id}",
   "version": "${version}",
-  "name": "O123456789",
-  "description": "This mod changes the item count numbers to those from Create mod",
+  "name": "${mod_name}",
+  "description": "${description}",
   "authors": [
-    "catboybinary, evanbones"
+    "${mod_author}"
   ],
   "contact": {
-    "homepage": ""
+    "homepage": "https://github.com/evanbones/Reliable-Recount",
+    "sources": "https://github.com/evanbones/Reliable-Recount"
   },
-  "license": "GPL-3.0",
-  "icon": "assets/o123456789/icon.png",
-  "environment": "client",
+  "license": "${license}",
+  "icon": "${mod_id}.png",
+  "environment": "*",
   "entrypoints": {
     "main": [
-      "meow.binary.o123456789.fabric.O123456789Fabric"
+      "com.evandev.reliable_recount.ReliableRecount"
     ],
     "client": [
-      "meow.binary.o123456789.fabric.client.O123456789FabricClient"
+      "com.evandev.reliable_recount.client.ReliableRecountClient"
+    ],
+    "modmenu": [
+      "com.evandev.reliable_recount.compat.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "o123456789.mixins.json",
-    "o123456789_fabric.mixins.json"
+    "${mod_id}.mixins.json",
+    "${mod_id}.fabric.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.16.10",
-    "minecraft": ">=1.20.1 <1.21.2",
-    "java": ">=17",
-    "fabric-api": "*"
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
   }
 }
