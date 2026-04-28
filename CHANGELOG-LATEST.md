@@ -1,1 +1,3 @@
-- Remake with new font options by @noelledotjpg.
+### Fixed 
+
+- Fixed issues with numbers in EMI.
