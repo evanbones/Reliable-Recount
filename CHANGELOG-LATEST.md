@@ -1,3 +1,3 @@
-### Fixed 
+### Fixed
 
-- Fixed issues with numbers in EMI.
+- Fixed issues with numbers when using Sensible Stackables.

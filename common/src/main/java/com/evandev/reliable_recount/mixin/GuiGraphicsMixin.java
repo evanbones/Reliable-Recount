@@ -2,6 +2,7 @@ package com.evandev.reliable_recount.mixin;
 
 import com.evandev.reliable_recount.CommonClass;
 import com.evandev.reliable_recount.config.ModConfig;
+import com.evandev.reliable_recount.platform.Services;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
@@ -25,6 +26,10 @@ public abstract class GuiGraphicsMixin {
         }
 
         Component styled = CommonClass.getStyledAmount(text);
+
+        if (Services.PLATFORM.isModLoaded("sensible_stackables")) {
+            return CommonClass.drawStringWrapper(instance, font, styled, strX, strY, color);
+        }
 
         int xOffset = (style == ModConfig.FontStyle.CREATE) ? 16 : 17;
         return CommonClass.drawStringWrapper(instance, font, styled, itemX + xOffset - font.width(styled), strY, color);
