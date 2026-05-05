@@ -1,3 +1,3 @@
 ### Fixed
 
-- Fixed issues with numbers when using Sensible Stackables.
+- Fixed numbers being centered when using Sensible Stackables.
