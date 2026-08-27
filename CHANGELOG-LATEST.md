@@ -1,1 +1,1 @@
-- Initial release.
+- Initial 26.2 compatible release.
